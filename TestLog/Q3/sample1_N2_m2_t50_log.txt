@@ -1,0 +1,10 @@
+value of timeouts to be judged (N) : 2
+value of counts of ping        (m) : 2
+value of threshold of overload (t) : 50
+Last Check : 2020-10-19 13:31:46
+-----------------------
+Detected failure server
+ *10.20.30.1/16
+     ping TimeOut : 2020-10-19 13:31:41    elapsed time : 0:00:05
+------------------------
+Detected overload server

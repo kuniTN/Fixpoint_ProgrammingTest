@@ -1,0 +1,4 @@
+Param of value of timeouts to be judged : 5
+Last Check : 2020-10-19 13:31:46
+-----------------------
+Detected failure server

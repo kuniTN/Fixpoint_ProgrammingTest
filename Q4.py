@@ -123,9 +123,12 @@ def logFileRead(fName):
                         if data[2] == '-' and ServerState[i][1] != 0: #現在タイムアウトで前回通信できていた場合
                             ServerState[i][3] += 1
                             if ServerState[i][3]>=N:#故障判定
+                                if ServerState[i][1] == 1: #過負荷状態であると判断されている場合
+                                    OverloadServerLog[i][ServerState[i][5]] += data[0]#過負荷状態回復時刻を挿入
                                 ServerState[i][1] = 0 #statusを故障とする
                                 ServerState[i][2] += 1 #故障回数+1
                                 ServerState[i][4] = -1 #平均応答時間を初期化　故障発生時には意味がなくなる
+                                
                                 if len(ServerPingLog[i])>1:
                                     for j in range(1,len(ServerPingLog[i])):
                                         del ServerPingLog[i][1]#故障発生時，記録されているping値を消去

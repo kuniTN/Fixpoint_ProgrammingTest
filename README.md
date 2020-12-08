@@ -32,4 +32,4 @@ Windowsコマンドプロンプト上で _Ctrl + C_ を入力することで停�
 Windowsコンソール上に，現在までで読み込んだデータに基づいて，故障を検知したサーバーアドレスならびに故障発生時刻を表記する．  
 故障を検知後，ping応答があった場合は経過時間をさらに表示する．  
 故障を検知後，ping応答がない場合は，経過時間は表記されず，当該サーバアドレスの頭に _*_ を表記し，現在も応答がないことを示す．
-!(Fixpoint_ProgrammingTest/image/Q1example.png)
+![Q1example](image/Q1example.png)

@@ -41,4 +41,7 @@ ServerStateは要素として[アドレス, 状態, 故障発生回数]の3つ�
   
 また，故障発生時刻，ping回復時刻を保存するため，FailedServerLogというリストに一連の情報を格納する．
 FailedServerLogは要素として[アドレス, 時刻, ... ]を持つ．
-時刻は，故障時刻とping回復時刻を組み合わせた文字列'YYYYMMDDhhmmssYYYYMMDDhhmmss'が対応する．故障時刻は前半14文字，ping回復時刻は後半14文字に相当する．pingが回復していない場合は後半14文字は存在しない．
+時刻は，故障時刻とping回復時刻を組み合わせた文字列'YYYYMMDDhhmmssYYYYMMDDhhmmss'が対応する．故障時刻は前半14文字，ping回復時刻は後半14文字に相当する．pingが回復していない場合は後半14文字は存在しない．  
+故障発生のたび，FailedServerLogリストには時刻の要素が追加されていく．
+## 設問2
+

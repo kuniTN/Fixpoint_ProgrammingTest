@@ -47,7 +47,7 @@ try:
         print('Select the number of the sample you want to use.')
         buf = input()
         if buf.isdecimal():
-            if int(buf) >= 0 and int(buf) < i:
+            if int(buf) >= 0 and int(buf) <= i:
                 TestFile = FileName[int(buf)]
                 break
         os.system('cls')

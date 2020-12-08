@@ -182,13 +182,17 @@ def show():
     Print('Current Network chart')
     for i in range(len(SubnetState)):
         state = ' '
-        if SubnetState[i][1] != 2:
+        if SubnetState[i][1] == -1:
+            state = '?'
+        elif SubnetState[i][1] != 2:
             state = '*'
         Print(state + str(SubnetState[i][0]))
         for j in range(len(ServerState)):
             if SubnetState[i][0] == ip_network(ServerState[j][0],strict=False):
                 state = ' '
-                if (ServerState[j][1] != 2):
+                if ServerState[j][1] == -1:
+                    state = '? samples low  '
+                elif ServerState[j][1] != 2:
                     state = '*'
                 Print('  ->' +state+ str(ServerState[j][0]))
     Print('-----------------------')

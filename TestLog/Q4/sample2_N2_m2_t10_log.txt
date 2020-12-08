@@ -1,0 +1,25 @@
+value of timeouts to be judged (N) : 2
+value of counts of ping        (m) : 2
+value of threshold of overload (t) : 10
+Last Check : 2020-10-19 13:33:52
+-----------------------
+Current Network chart
+ 10.20.0.0/16
+  -> 10.20.30.1/16
+  ->*10.20.30.2/16
+ 192.168.1.0/24
+  -> 192.168.1.1/24
+  -> 192.168.1.2/24
+-----------------------
+Detected failure subnet
+------------------------
+Detected failure server
+ 10.20.30.1/16
+     ping TimeOut : 2020-10-19 13:33:31 -> Rediscovery : 2020-10-19 13:33:39  Failure period : 0:00:08
+     ping TimeOut : 2020-10-19 13:33:41 -> Rediscovery : 2020-10-19 13:33:46  Failure period : 0:00:05
+ *10.20.30.2/16
+     ping TimeOut : 2020-10-19 13:33:48    elapsed time : 0:00:04
+------------------------
+Detected overload server
+ 10.20.30.1/16
+     Overload detect : 2020-10-19 13:32:36 -> Recovery : 2020-10-19 13:33:29  Overload period : 0:00:53
